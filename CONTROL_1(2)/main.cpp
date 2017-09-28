@@ -4,9 +4,9 @@ using namespace std;
 int SUMAR(int A[],int m){
   int sum=0;
   if(m==0)
-    sum= sum+A[0];
+    return sum= sum+A[0];
   else
-    sum=  A[m]+ SUMAR(A,m-1);
+    return sum=  A[m]+ SUMAR(A,m-1);
 
   }
 int main()
