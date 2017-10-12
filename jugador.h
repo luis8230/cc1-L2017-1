@@ -1,17 +1,39 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
 class jugador
 {
     public:
-        char*name;
+        string name;
         int numero;
-        char*posicion;
+        string posicion;
         int agresividad;
         jugador();
-        jugador(char *nom,int camiseta, char *lugar, int agress  ){
+        jugador(string nom ,int camiseta, string lugar , int agress);
+        void setName(string n);
+        void setNumero(int num);
+        void setPosicion(string pos);
+        void setAgresividad(int a);
+
+        void print();
+
+};
+
+#endif // JUGADOR_H
+
+
+///CPP///
+#include "jugador.h"
+
+
+jugador::jugador()
+{
+cout<<"debiste ingresar un jugador con su Nombre, numero, posicion y agresividad >:v"<<endl;
+}
+jugador::jugador(string nom ,int camiseta, string lugar , int agress){
         name= nom;
         numero= camiseta;
         posicion= lugar;
@@ -21,6 +43,21 @@ class jugador
         if (agresividad>=6)
             cout<<"esta jugando agresivamente"<<endl;
               }
-};
 
-#endif // JUGADOR_H
+    void jugador::setName(string n){
+        n=name;
+        };
+    void jugador::setNumero(int num){
+        num= numero;
+        };
+    void jugador::setPosicion(string pos){
+        pos= posicion;
+        };
+    void jugador::setAgresividad(int a){
+        a= agresividad;
+        };
+
+    void jugador::print(){
+            cout<<name<<numero<<posicion<<agresividad<<endl;
+        };
+
