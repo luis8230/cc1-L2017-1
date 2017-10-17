@@ -58,6 +58,6 @@ jugador::jugador(string nom ,int camiseta, string lugar , int agress){
         };
 
     void jugador::print(){
-            cout<<name<<numero<<posicion<<agresividad<<endl;
+            cout<<name<<"  "<<numero<<"  "<<posicion<<endl;
         };
 
