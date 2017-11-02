@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1509637812 source:d:\poligonos control\main.cpp
+	<iostream>
+	"Poligono.h"
+	"Rectangulo.h"
+	"Triangulo.h"
+	"Cuadrado.h"
+
+1509636387 source:d:\poligonos control\src\poligono.cpp
+	"Poligono.h"
+
+1509637225 d:\poligonos control\include\poligono.h
+	<iostream>
+
+1509637894 source:d:\poligonos control\src\rectangulo.cpp
+	"Rectangulo.h"
+
+1509637679 d:\poligonos control\include\rectangulo.h
+	"Poligono.h"
+
+1509637853 source:d:\poligonos control\src\triangulo.cpp
+	"Triangulo.h"
+
+1509637763 d:\poligonos control\include\triangulo.h
+	"Poligono.h"
+
+1509637841 source:d:\poligonos control\src\cuadrado.cpp
+	"Cuadrado.h"
+
+1509637679 d:\poligonos control\include\cuadrado.h
+	"Poligono.h"
+
+1509639669 source:d:\poligonos control\src\arraypoligono.cpp
+	"ArrayPoligono.h"
+
+1509639530 d:\poligonos control\include\arraypoligono.h
+	"Poligono.h"
+	"Rectangulo.h"
+	"Triangulo.h"
+	"Cuadrado.h"
+
