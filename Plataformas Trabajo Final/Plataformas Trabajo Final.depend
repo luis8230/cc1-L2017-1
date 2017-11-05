@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1509853763 source:d:\c++ projects\plataformas trabajo final\src\screenmod.cpp
+	"Screenmod.h"
+
+1509853763 d:\c++ projects\plataformas trabajo final\include\screenmod.h
+
+1509900878 source:d:\c++ projects\plataformas trabajo final\main.cpp
+	<iostream>
+	"allegro.h"
+
