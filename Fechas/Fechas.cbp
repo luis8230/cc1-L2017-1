@@ -35,13 +35,16 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Fecha.h" />
+		<Unit filename="include/empleado.h" />
+		<Unit filename="include/empresa.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Fecha.cpp" />
+		<Unit filename="src/empleado.cpp" />
+		<Unit filename="src/empresa.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
-			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

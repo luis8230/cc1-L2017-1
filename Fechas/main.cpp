@@ -1,5 +1,8 @@
 #include <iostream>
 #include "Fecha.h"
+#include "empleado.h"
+#include "empresa.h"
+
 using namespace std;
 
 int main()
@@ -8,6 +11,8 @@ int main()
 
     uno.bisiesto();
     uno.sumadias(5);
+
+    empresa a("Leche",12121212121);
 
     return 0;
 }
