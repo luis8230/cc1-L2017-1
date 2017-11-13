@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1510538508 source:c:\users\usuario\desktop\escenario\escenarios\main.cpp
+	<iostream>
+	<allegro.h>
+
+1510538567 source:c:\users\usuario\desktop\escenario\escenarios\src\allegroinit.cpp
+	"allegroinit.h"
+	<allegro.h>
+
+1510538508 c:\users\usuario\desktop\escenario\escenarios\include\allegroinit.h
+	<allegro.h>
+
