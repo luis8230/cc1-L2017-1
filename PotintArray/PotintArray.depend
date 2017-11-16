@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1510846901 source:d:\nueva carpeta (2)\nueva carpeta\nueva carpeta (2)\cc1-l2017-1-master\potintarray\main.cpp
+	<iostream>
+	"Point.h"
+	"PointArray.h"
+
+1510847581 d:\nueva carpeta (2)\nueva carpeta\nueva carpeta (2)\cc1-l2017-1-master\potintarray\include\point.h
+
+1510848199 d:\nueva carpeta (2)\nueva carpeta\nueva carpeta (2)\cc1-l2017-1-master\potintarray\include\pointarray.h
+	"Point.h"
+
+1510847581 source:d:\nueva carpeta (2)\nueva carpeta\nueva carpeta (2)\cc1-l2017-1-master\potintarray\src\point.cpp
+	"Point.h"
+
