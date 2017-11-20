@@ -3,14 +3,33 @@
 
 using namespace std;
 
+const int Anchura = 800;
+const int Altura  = 600;
+
+    BITMAP *buffer;
+
+    const int desplazo=4;
+
+
+void inicio()
+{
+ allegro_init();
+ install_keyboard();
+
+ set_color_depth(32);
+ set_gfx_mode(GFX_AUTODETECT_WINDOWED, Anchura, Altura, 0, 0);
+
+ buffer = create_bitmap(Anchura, Altura);
+}
+
+void pintar()
+{
+    blit(buffer, screen, 0, 0, 0, 0, Anchura, Altura);
+}
+
 int main()
 {
-    allegro_init();
-    install_keyboard();
-    //Pantalla//
-    set_color_depth(32);
-    set_gfx_mode(GFX_AUTODETECT_WINDOWED,640,300,0,0);
-    BITMAP *buffer = create_bitmap(640,300);
+   inicio();
     clear_to_color(buffer,0xFFFFFF);
     //Personje y Sprites//
 
@@ -116,60 +135,59 @@ int main()
 
 //Bucle y comandos//
     while(!key[KEY_ESC]) {
-            blit(personajeAbajo, screen, 0, 0, x, y, 38, 54);
             if(key[KEY_UP]){
                 y-=30;
-                blit(buffer,screen,0,0,0,0,640,300);
+                pintar();
                 blit(personajeArriba,screen,0,0,x,y,38,54);
                 rest(130);
             }
             else if(key[KEY_LEFT]){
                 x-=30;
-                blit(buffer,screen,0,0,0,0,640,300);
+                pintar();
                 blit(personajeIzquierda,screen,0,0,x,y,38,54);
                 rest(130);
             }
             else if(key[KEY_DOWN]){
                y+=30;
-                blit(buffer,screen,0,0,0,0,640,300);
+                pintar();
                 blit(personajeAbajo,screen,0,0,x,y,38,54);
-                rest(130);
+                rest(100);
             }
             else if(key[KEY_RIGHT]){
                 x+=30;
-                blit(buffer,screen,0,0,0,0,640,300);
+                pintar();
                 blit(personajeDerecha,screen,0,0,x,y,38,54);
-                rest(130);
+                rest(100);
             }
             if(key[KEY_SPACE]&&key[KEY_LEFT]){
-                blit(buffer,screen,0,0,0,0,640,300);
+                pintar();
                 blit(personajeAtaqueNI,screen,0,0,x,y,69,78);
                 rest(90);
             }
             else if(key[KEY_SPACE]&&key[KEY_RIGHT]){
-                blit(buffer,screen,0,0,0,0,640,300);
+                pintar();
                 blit(personajeAtaqueND,screen,0,0,x,y,69,78);
                 rest(90);
             }
             else if(key[KEY_SPACE]&&key[KEY_UP]){
-                blit(buffer,screen,0,0,0,0,640,300);
+                pintar();
                 blit(personajeAtaqueFA,screen,0,0,x,y,111,57);
-                rest(150);
+                rest(100);
                 ff=true;
                 xf= y-60;
             }
             else if(key[KEY_SPACE]&&key[KEY_DOWN]){
-                blit(buffer,screen,0,0,0,0,640,300);
+               pintar();
                 blit(personajeAtaqueFB,screen,0,0,x,y,111,57);
-                rest(150);
+                rest(100);
                 ff=true;
                 xf= y+60;
             }
             if(ff){
-                blit(buffer,screen,0,0,0,0,640,300);
+                pintar();
                 blit(FuegoPersonaje,screen,0,0,x,xf,111,57);
                 ff=false;
-                rest(150);
+                rest(160);
             }
 
 

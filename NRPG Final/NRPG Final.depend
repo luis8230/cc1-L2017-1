@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1509934482 source:d:\c++ projects\nrpg final\main.cpp
+1511140302 source:d:\c++ projects\nrpg final\main.cpp
 	<iostream>
 	"allegro.h"
 
