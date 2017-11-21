@@ -6,9 +6,9 @@ using namespace std;
 const int Anchura = 800;
 const int Altura  = 600;
 
-    BITMAP *buffer;
+BITMAP *buffer;
 
-    const int desplazo=4;
+const int desplazo=4;
 
 
 void inicio()
