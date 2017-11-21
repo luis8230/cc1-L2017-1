@@ -1,5 +1,9 @@
 #ifndef ESCENARIO_H
 #define ESCENARIO_H
+#include <allegro.h>
+#include <string>
+
+using namespace std;
 
 
 class escenario
@@ -12,11 +16,11 @@ class escenario
     int y;
 
     public:
-        escenario(string e,BITMAP b,string c);
+        escenario(char const *e,BITMAP *b, char const *c);
 
 
         void pintar(int x,int y);
-        void cargar(string e, BITMAP b,string c);
+        void cargar(char const *e, BITMAP *b,char const *c);
 
 };
 

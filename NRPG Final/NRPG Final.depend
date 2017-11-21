@@ -3,3 +3,15 @@
 	<iostream>
 	"allegro.h"
 
+1511276368 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\main.cpp
+	<iostream>
+	"allegro.h"
+	"escenario.h"
+
+1511288201 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\escenario.cpp
+	"escenario.h"
+
+1511288152 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\escenario.h
+	<allegro.h>
+	<string>
+

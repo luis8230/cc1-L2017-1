@@ -1,5 +1,6 @@
 #include <iostream>
 #include "allegro.h"
+#include "escenario.h"
 
 using namespace std;
 
@@ -130,7 +131,11 @@ int main()
     //Verificar//
     if (!personajeArriba) {
     cout<<("Error al cargar el bitmap");
+
 }
+
+escenario casa("casa.bmp",buffer,"casa.bmp");
+
 
 
 //Bucle y comandos//
