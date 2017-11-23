@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1511450578 source:c:\users\alumno-d\desktop\timer\main.cpp
+	<iostream>
+	<chrono>
+
