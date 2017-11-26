@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1511140302 source:d:\c++ projects\nrpg final\main.cpp
+	<iostream>
+	"allegro.h"
+
+1511726462 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\main.cpp
+	<iostream>
+	"allegro.h"
+	"escenario.h"
+	"musica.h"
+	"Entidad.h"
+	"colision.h"
+
+1511726267 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\escenario.cpp
+	"escenario.h"
+
+1511726267 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\escenario.h
+	<allegro.h>
+	<string>
+
+1511649084 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\entidad.cpp
+	"Entidad.h"
+
+1511676731 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\entidad.h
+	<allegro.h>
+
+1511649084 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\npc.cpp
+	"NPC.h"
+
+1511649084 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\npc.h
+	<allegro.h>
+
+1511649084 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\musica.cpp
+	"musica.h"
+
+1511649084 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\musica.h
+	<allegro.h>
+	<string>
+
+1511725340 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\jugador.cpp
+	"Jugador.h"
+
+1511725357 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\jugador.h
+	<allegro.h>
+	"Entidad.h"
+
+1511724448 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\colision.cpp
+	"colision.h"
+
+1511669917 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\colision.h
+	<allegro.h>
+	"Jugador.h"
+
