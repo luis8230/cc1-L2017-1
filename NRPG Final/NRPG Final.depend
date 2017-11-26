@@ -15,3 +15,15 @@
 	<allegro.h>
 	<string>
 
+1511441422 source:c:\users\usuario\desktop\nrpg final\main.cpp
+	<iostream>
+	"allegro.h"
+	"escenario.h"
+
+1511441422 c:\users\usuario\desktop\nrpg final\include\escenario.h
+	<allegro.h>
+	<string>
+
+1511441422 source:c:\users\usuario\desktop\nrpg final\src\escenario.cpp
+	"escenario.h"
+
