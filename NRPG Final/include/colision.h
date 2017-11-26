@@ -7,6 +7,7 @@ class colision
 {
     jugador a;
     BITMAP *colisiones;
+    bool prestocambio;
 
     int posx;
     int posy;
@@ -16,6 +17,7 @@ class colision
         colision(jugador a,const char *b);
 
         void collision();
+        void cambio();
 
 };
 

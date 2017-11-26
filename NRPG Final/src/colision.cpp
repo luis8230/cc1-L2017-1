@@ -5,9 +5,14 @@ colision::colision(jugador a,const char *b)
    posx=a.getx();
    posy=a.gety();
 
+   prestocambio=false;
+
    colisiones=load_bmp(b,NULL);
 
    collision();
+
+
+
 
 }
 
@@ -26,8 +31,9 @@ void colision::collision()
         for (int j=0;j<16;i++){
             if(getpixel(colisiones,posx+i,posy+j)==0xff0000){
                 chocar=true;
-                i=32;
-                j=32;
+            }
+            if(getpixel(colisiones,posx+i,posy+j)==0x00ff00){
+                prestocambio=true;
             }
         }
 
@@ -36,3 +42,6 @@ void colision::collision()
         a.mover(posx,posy);
     }
 }
+
+
+
