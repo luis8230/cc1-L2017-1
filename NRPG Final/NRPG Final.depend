@@ -3,27 +3,42 @@
 	<iostream>
 	"allegro.h"
 
-1511276368 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\main.cpp
+1511659549 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\main.cpp
 	<iostream>
 	"allegro.h"
 	"escenario.h"
+	"musica.h"
 
-1511288201 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\escenario.cpp
+1511449959 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\escenario.cpp
 	"escenario.h"
 
-1511288152 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\escenario.h
+1511452080 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\escenario.h
 	<allegro.h>
 	<string>
 
-1511441422 source:c:\users\usuario\desktop\nrpg final\main.cpp
-	<iostream>
-	"allegro.h"
-	"escenario.h"
+1511492561 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\entidad.cpp
+	"Entidad.h"
 
-1511441422 c:\users\usuario\desktop\nrpg final\include\escenario.h
+1511492442 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\entidad.h
+	<allegro.h>
+
+1511652944 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\npc.cpp
+	"NPC.h"
+
+1511652933 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\npc.h
+	<allegro.h>
+
+1511453541 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\musica.cpp
+	"musica.h"
+
+1511453500 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\musica.h
 	<allegro.h>
 	<string>
 
-1511441422 source:c:\users\usuario\desktop\nrpg final\src\escenario.cpp
-	"escenario.h"
+1511492374 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\jugador.cpp
+	"Jugador.h"
+
+1511492387 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\jugador.h
+	<allegro.h>
+	"Entidad.h"
 

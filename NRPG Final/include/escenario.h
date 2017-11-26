@@ -22,6 +22,9 @@ class escenario
         void pintar(int x,int y);
         void cargar(char const *e, BITMAP *b,char const *c);
 
+
+
+
 };
 
 

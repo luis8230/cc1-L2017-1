@@ -1,7 +1,7 @@
 #include <iostream>
 #include "allegro.h"
 #include "escenario.h"
-
+#include "musica.h"
 using namespace std;
 
 const int Anchura = 800;
@@ -134,63 +134,67 @@ int main()
 
 }
 
-escenario casa("casa.bmp",buffer,"casa.bmp");
 
-
+            escenario casa("casa.bmp",buffer,"casa.bmp");
+            musica a ("prueba.mid");
+                a.play();
 
 //Bucle y comandos//
     while(!key[KEY_ESC]) {
+            if(key[KEY_S]){
+
+            }
             if(key[KEY_UP]){
                 y-=30;
                 pintar();
-                blit(personajeArriba,screen,0,0,x,y,38,54);
-                rest(130);
+                masked_blit(personajeArriba,screen,0,0,x,y,38,54);
+                rest(60);
             }
             else if(key[KEY_LEFT]){
                 x-=30;
                 pintar();
-                blit(personajeIzquierda,screen,0,0,x,y,38,54);
-                rest(130);
+                masked_blit(personajeIzquierda,screen,0,0,x,y,38,54);
+                rest(60);
             }
             else if(key[KEY_DOWN]){
                y+=30;
                 pintar();
-                blit(personajeAbajo,screen,0,0,x,y,38,54);
-                rest(100);
+                masked_blit(personajeAbajo,screen,0,0,x,y,38,54);
+                rest(60);
             }
             else if(key[KEY_RIGHT]){
                 x+=30;
                 pintar();
-                blit(personajeDerecha,screen,0,0,x,y,38,54);
-                rest(100);
+                masked_blit(personajeDerecha,screen,0,0,x,y,38,54);
+                rest(60);
             }
             if(key[KEY_SPACE]&&key[KEY_LEFT]){
                 pintar();
-                blit(personajeAtaqueNI,screen,0,0,x,y,69,78);
+                masked_blit(personajeAtaqueNI,screen,0,0,x,y,69,78);
                 rest(90);
             }
             else if(key[KEY_SPACE]&&key[KEY_RIGHT]){
                 pintar();
-                blit(personajeAtaqueND,screen,0,0,x,y,69,78);
+                masked_blit(personajeAtaqueND,screen,0,0,x,y,69,78);
                 rest(90);
             }
             else if(key[KEY_SPACE]&&key[KEY_UP]){
                 pintar();
-                blit(personajeAtaqueFA,screen,0,0,x,y,111,57);
+                masked_blit(personajeAtaqueFA,screen,0,0,x,y,111,57);
                 rest(100);
                 ff=true;
                 xf= y-60;
             }
             else if(key[KEY_SPACE]&&key[KEY_DOWN]){
                pintar();
-                blit(personajeAtaqueFB,screen,0,0,x,y,111,57);
+                masked_blit(personajeAtaqueFB,screen,0,0,x,y,111,57);
                 rest(100);
                 ff=true;
                 xf= y+60;
             }
             if(ff){
                 pintar();
-                blit(FuegoPersonaje,screen,0,0,x,xf,111,57);
+                masked_blit(FuegoPersonaje,screen,0,0,x,xf,111,57);
                 ff=false;
                 rest(160);
             }
