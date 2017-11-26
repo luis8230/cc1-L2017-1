@@ -12,9 +12,9 @@ class Entidad
 
         int x;
         int y;
+        int desplazamiento=4 ;
 
         virtual void pintar()=0;
-        virtual void colision()=0;
 };
 
 #endif // ENTIDAD_H

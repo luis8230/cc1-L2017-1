@@ -1,11 +1,11 @@
 #ifndef COLISION_H
 #define COLISION_H
 #include <allegro.h>
-
+#include "Jugador.h"
 
 class colision
 {
-    jugador a;
+    Jugador *a;
     BITMAP *colisiones;
     bool prestocambio;
 
@@ -14,9 +14,10 @@ class colision
 
 
     public:
-        colision(jugador a,const char *b);
-
+      colision(Jugador &a, char const *b);
+    ~colision();
         void collision();
+
         void cambio();
 
 };

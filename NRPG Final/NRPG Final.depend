@@ -3,42 +3,51 @@
 	<iostream>
 	"allegro.h"
 
-1511659549 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\main.cpp
+1511676863 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\main.cpp
 	<iostream>
 	"allegro.h"
 	"escenario.h"
 	"musica.h"
+	"Entidad.h"
+	"colision.h"
 
-1511449959 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\escenario.cpp
+1511649084 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\escenario.cpp
 	"escenario.h"
 
-1511452080 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\escenario.h
+1511649084 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\escenario.h
 	<allegro.h>
 	<string>
 
-1511492561 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\entidad.cpp
+1511649084 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\entidad.cpp
 	"Entidad.h"
 
-1511492442 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\entidad.h
+1511676731 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\entidad.h
 	<allegro.h>
 
-1511652944 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\npc.cpp
+1511649084 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\npc.cpp
 	"NPC.h"
 
-1511652933 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\npc.h
+1511649084 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\npc.h
 	<allegro.h>
 
-1511453541 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\musica.cpp
+1511649084 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\musica.cpp
 	"musica.h"
 
-1511453500 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\musica.h
+1511649084 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\musica.h
 	<allegro.h>
 	<string>
 
-1511492374 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\jugador.cpp
+1511676752 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\jugador.cpp
 	"Jugador.h"
 
-1511492387 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\jugador.h
+1511676637 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\jugador.h
 	<allegro.h>
 	"Entidad.h"
+
+1511675179 source:c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\src\colision.cpp
+	"colision.h"
+
+1511669917 c:\users\hci\downloads\cc1-l2017-1-master\nrpg final\include\colision.h
+	<allegro.h>
+	"Jugador.h"
 

@@ -5,6 +5,7 @@
 
 class Jugador:Entidad
 {
+    BITMAP *Protagonista;
     BITMAP *personajeArriba;
     BITMAP *personajeAbajo;
     BITMAP *personajeDerecha;
@@ -13,12 +14,15 @@ class Jugador:Entidad
     BITMAP *personajeAtaqueND;
     BITMAP *personajeAtaqueFA;
     BITMAP *personajeAtaqueFB;
-
+    int direccion;
+    int animacion;
 
     public:
         Jugador();
-        virtual ~Jugador();
         void pintar();
+        int getx(); int gety();
+        void mover();
+        void keyboard();
     protected:
     private:
 };

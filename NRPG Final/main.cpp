@@ -2,6 +2,8 @@
 #include "allegro.h"
 #include "escenario.h"
 #include "musica.h"
+#include "Entidad.h"       #include "Jugador.h"
+#include "colision.h"
 using namespace std;
 
 const int Anchura = 800;
@@ -134,16 +136,14 @@ int main()
 
 }
 
-
             escenario casa("casa.bmp",buffer,"casa.bmp");
+
             musica a ("prueba.mid");
                 a.play();
 
 //Bucle y comandos//
     while(!key[KEY_ESC]) {
-            if(key[KEY_S]){
 
-            }
             if(key[KEY_UP]){
                 y-=30;
                 pintar();
