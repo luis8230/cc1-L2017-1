@@ -9,18 +9,17 @@ using namespace std;
 class escenario
 {
     BITMAP *esc;
-    BITMAP *colisiones;
     BITMAP *buffer;
 
     int x;
     int y;
 
     public:
-        escenario(char const *e,BITMAP *b, char const *c);
+        escenario(char const *e,BITMAP *b);
 
 
-        void pintar(int x, int y);
-        void cargar(char const *e, BITMAP *b,char const *c);
+        void pintar();
+        void cargar(char const *x, BITMAP *y);
 
 
 

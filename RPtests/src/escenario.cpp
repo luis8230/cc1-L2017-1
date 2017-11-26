@@ -2,21 +2,20 @@
 
 using namespace std;
 
-escenario::escenario(char const *a, BITMAP *b, char const *c )
+escenario::escenario(char const *a, BITMAP *b)
 {
-   cargar(a,b,c);
-   pintar(x,y);
+   cargar(a,b);
+   pintar();
 }
 
-void escenario::cargar(char const *a, BITMAP *b,char const *c)
+void escenario::cargar(char const *x, BITMAP *y)
 {
-    buffer=b;
-    esc=load_bmp(a,NULL);
-    colisiones=load_bmp(c,NULL);
+    buffer=y;
+    esc=load_bmp(x,NULL);
 
 }
 
-void escenario::pintar(int x, int y)
+void escenario::pintar()
 {
-    blit(esc,buffer,0,0,x,y,800,600);
+    blit(esc,buffer,0,0,160,160,800,600);
 }

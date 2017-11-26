@@ -72,10 +72,13 @@ int main()
 */
 
             Jugador a;
-            escenario casa("casa.bmp",buffer,"casa.bmp");
+
 
     while(!key[KEY_ESC]) {
              clear_to_color(buffer,0xFFFFFF);
+
+
+            escenario casa("casa.bmp",buffer);
             a.keyboard();
             pintar();
             a.pintar();

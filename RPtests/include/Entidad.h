@@ -12,7 +12,7 @@ class Entidad
 
         int x;
         int y;
-        int desplazamiento=4 ;
+        int desplazamiento=4;
 
         virtual void pintar()=0;
 };
