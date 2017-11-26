@@ -6,8 +6,8 @@
 #include "colision.h"
 using namespace std;
 
-const int Anchura = 800;
-const int Altura  = 600;
+const int Anchura = 640;
+const int Altura  = 400;
 
 BITMAP *buffer;
 
@@ -78,11 +78,12 @@ int main()
              clear_to_color(buffer,0xFFFFFF);
 
 
-            escenario casa("casa.bmp",buffer);
+            escenario bosque("bosque.bmp",buffer);
+            colision bosk(a,"bosque-choque.bmp");
             a.keyboard();
             pintar();
             a.pintar();
-            rest(60);
+            rest(1);
 
    }
     readkey();

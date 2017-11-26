@@ -22,10 +22,9 @@ class Jugador:Entidad
         ~Jugador();
         void pintar();
         int getx(); int gety();
-        void mover();
+
         void keyboard();
-    protected:
-    private:
+        void posiciona(int nx,int ny);
 };
 
 #endif // JUGADOR_H

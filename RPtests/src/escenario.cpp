@@ -17,5 +17,5 @@ void escenario::cargar(char const *x, BITMAP *y)
 
 void escenario::pintar()
 {
-    blit(esc,buffer,0,0,160,160,800,600);
+    blit(esc,buffer,0,0,0,0,640,400);
 }

@@ -1,6 +1,6 @@
 #include "colision.h"
 
-colision::colision(Jugador &a, char const *b)
+colision::colision(Jugador a, const char *b)
 {
    posx=a.getx();
    posy=a.gety();
@@ -38,9 +38,9 @@ void colision::collision()
         }
 
     }
-    //if (chocar){
-      //  a.mover(posx,posy);
-//}
+    if (chocar){
+        a->posiciona(posx,posy);
+    }
 }
 
 

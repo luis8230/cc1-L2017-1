@@ -1,7 +1,7 @@
 #include "Jugador.h"
 
-Jugador::Jugador()
-{
+Jugador::Jugador(){
+
    //Personaje Principal//
     Protagonista= load_bitmap("isaac.bmp",NULL);
     /*personajeArriba=  load_bitmap("0.bmp",NULL);
@@ -18,14 +18,9 @@ Jugador::Jugador()
     y=50;
 
 }
-
-
-void Jugador::pintar()
-{
+void Jugador::pintar(){
     masked_blit(Protagonista,screen,0,0,x,y,64,64);
-
 }
-
 int Jugador::getx(){
     return x;
 }
@@ -61,7 +56,11 @@ void Jugador::keyboard(){
       }
 
 }
+void Jugador::posiciona(int nx,int ny){
+    x=nx;
+    y=ny;
+}
 Jugador:: ~Jugador(){
     destroy_bitmap(Protagonista);
-
 }
+d

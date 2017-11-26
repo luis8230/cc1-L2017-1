@@ -14,8 +14,8 @@ class colision
 
 
     public:
-      colision(Jugador &a, char const *b);
-    ~colision();
+      colision(Jugador a, char const *b);
+     ~colision();
         void collision();
 
         void cambio();

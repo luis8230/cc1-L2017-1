@@ -51,7 +51,7 @@
 	<allegro.h>
 	"Jugador.h"
 
-1511729740 source:c:\users\usuario\desktop\rptests\main.cpp
+1511734328 source:c:\users\usuario\desktop\rptests\main.cpp
 	<iostream>
 	"allegro.h"
 	"escenario.h"
@@ -70,21 +70,21 @@
 1511729348 c:\users\usuario\desktop\rptests\include\entidad.h
 	<allegro.h>
 
-1511716454 c:\users\usuario\desktop\rptests\include\colision.h
+1511734417 c:\users\usuario\desktop\rptests\include\colision.h
 	<allegro.h>
 	"Jugador.h"
 
-1511716454 c:\users\usuario\desktop\rptests\include\jugador.h
+1511734328 c:\users\usuario\desktop\rptests\include\jugador.h
 	<allegro.h>
 	"Entidad.h"
 
-1511716454 source:c:\users\usuario\desktop\rptests\src\colision.cpp
+1511734440 source:c:\users\usuario\desktop\rptests\src\colision.cpp
 	"colision.h"
 
 1511716454 source:c:\users\usuario\desktop\rptests\src\entidad.cpp
 	"Entidad.h"
 
-1511716454 source:c:\users\usuario\desktop\rptests\src\escenario.cpp
+1511733822 source:c:\users\usuario\desktop\rptests\src\escenario.cpp
 	"escenario.h"
 
 1511716454 source:c:\users\usuario\desktop\rptests\src\jugador.cpp
