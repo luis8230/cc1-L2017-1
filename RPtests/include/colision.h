@@ -18,7 +18,6 @@ class colision
      ~colision();
         void collision();
 
-        void cambio();
 
 };
 

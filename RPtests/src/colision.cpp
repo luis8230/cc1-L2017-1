@@ -25,7 +25,6 @@ void colision::collision()
 {
     bool chocar=false;
 
-    //aca no sabia el tamaño del jugador asi que le puse 32 y 16, ve jugando con los numeros si no funciona bien
 
     for (int i=0;i<32;i++){
         for (int j=0;j<16;i++){

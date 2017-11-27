@@ -79,7 +79,7 @@ int main()
 
 
             escenario bosque("bosque.bmp",buffer);
-            colision bosk(a,"bosque-choque.bmp");
+            //colision bosk(a,"bosque-choque.bmp");
             a.keyboard();
             pintar();
             a.pintar();

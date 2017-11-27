@@ -24,6 +24,7 @@ class Jugador:Entidad
         int getx(); int gety();
 
         void keyboard();
+        void choques();
         void posiciona(int nx,int ny);
 };
 

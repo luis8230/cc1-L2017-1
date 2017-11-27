@@ -60,7 +60,30 @@ void Jugador::posiciona(int nx,int ny){
     x=nx;
     y=ny;
 }
+void Jugador::choques()
+{
+    bool chocar=false;
+    bool prestocambio=true;
+
+    BITMAP *mapa=load_bmp("bosque-choque.bmp",NULL);
+
+
+    for (int i=0;i<30;i++){
+        for (int j=0;j<15;i++){
+            if(getpixel(mapa,x+i,y+j)==0xff0000){
+                chocar=true;
+            }
+            if(getpixel(mapa,x+i,y+j)==0x00ff00){
+                prestocambio=true;
+            }
+        }
+
+    }
+    if (chocar){
+        posiciona(x,y);
+    }
+}
 Jugador:: ~Jugador(){
     destroy_bitmap(Protagonista);
 }
-d
+
