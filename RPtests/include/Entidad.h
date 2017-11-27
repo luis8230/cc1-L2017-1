@@ -4,14 +4,22 @@
 
 class Entidad
 {
-    BITMAP * variable;
-    BITMAP * collide;
-
+    BITMAP *variable;
+    BITMAP *collide;
 
     public:
 
+        BITMAP *fondo;
+        BITMAP *choque;
+
+
         int x;
         int y;
+
+        const int Anchura = 800;
+        const int Altura  = 600;
+        BITMAP *buffer = create_bitmap(Anchura, Altura);
+
         int desplazamiento=4;
 
         virtual void pintar()=0;

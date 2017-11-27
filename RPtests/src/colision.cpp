@@ -4,6 +4,7 @@ colision::colision(Jugador a, const char *b)
 {
    posx=a.getx();
    posy=a.gety();
+   a.keyboard();
 
    prestocambio=false;
 

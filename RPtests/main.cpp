@@ -4,10 +4,14 @@
 #include "musica.h"
 #include "Entidad.h"       #include "Jugador.h"
 #include "colision.h"
+#include "Esencial.h"
+#include "NPC.h"
+#include <time.h>
 using namespace std;
 
 const int Anchura = 640;
 const int Altura  = 400;
+int Puntaje=0;
 
 BITMAP *buffer;
 
@@ -23,6 +27,7 @@ void inicio()
  set_gfx_mode(GFX_AUTODETECT_WINDOWED, Anchura, Altura, 0, 0);
 
  buffer = create_bitmap(Anchura, Altura);
+ srand(time(NULL));
 }
 
 void pintar()
@@ -72,17 +77,23 @@ int main()
 */
 
             Jugador a;
+            Esencial d;
+            NPC enemigo1("Aqua1.bmp");
+            NPC enemigo2("caballero1.bmp");
 
 
     while(!key[KEY_ESC]) {
              clear_to_color(buffer,0xFFFFFF);
 
-
             escenario bosque("bosque.bmp",buffer);
-            //colision bosk(a,"bosque-choque.bmp");
+
             a.keyboard();
             pintar();
             a.pintar();
+            enemigo1.pintar();
+
+            enemigo2.pintar();
+
             rest(1);
 
    }

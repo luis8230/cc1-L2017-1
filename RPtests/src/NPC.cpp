@@ -1,19 +1,51 @@
 #include "NPC.h"
+NPC:: NPC(char const *e){
+    imagen= load_bitmap(e,NULL);
 
-void NPC::crea( BITMAP *_img, int _x, int _y, int dir, int _estado, int _lugar )
+}
+
+
+
+void NPC::pintar()
 {
-    x = _x;
-    y = _y;
-    direccion = dir;
-    animacion = 0;
-    escena = _lugar;
 
-    imagen = create_bitmap(_img->w, _img->h);
-    blit( _img, imagen, 0,0, 0,0, _img->w, _img->h);
-    estado=_estado;
+            masked_blit(imagen, screen, 0, 0, x, y, 64,64);
+            movimiento();
 }
-/*void NPC::pinta()
-{           rectfill( choque, x+2, y+1, x+30, y+31, 0xff0000);
-            masked_blit(imagen, fondo, animacion*32, direccion*32, x, y, 32,32);
+
+void NPC::movimiento()
+{
+    int re = rand()%5;
+    estado= re;
+     int dx=x; int dy=y;
+       if ( estado=1 )
+      {
+           y-=desplazamiento;
+           direccion = 3;
+      }
+      if ( estado=2 )
+      {
+           y+=desplazamiento;
+           direccion = 0;
+      }
+      if ( estado=3 )
+      {
+           x-=desplazamiento;
+           direccion = 1;
+      }
+      if ( estado=4 )
+      {
+           x+=desplazamiento;
+           direccion = 2;
+      }
+      if ( dx != x || dy != y )
+      {
+           animacion++;
+           if ( animacion > 2 ) animacion = 0;
+      }
+      if (x<-32) x=-32;
+      if (x>Anchura-64) x=Anchura-64;
+      if (y<-32) y=-32;
+      if (y>Altura-64) y=Altura-64;
+
 }
-*/
