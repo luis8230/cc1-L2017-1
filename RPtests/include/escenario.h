@@ -16,6 +16,7 @@ class escenario
 
     public:
         escenario(char const *e,BITMAP *b);
+        ~escenario();
 
 
         void pintar();

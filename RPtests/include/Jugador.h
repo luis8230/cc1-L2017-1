@@ -11,8 +11,6 @@ class Jugador:Entidad
     BITMAP *ProtagonistaI;
     BITMAP *AtaqueI;
     BITMAP *AtaqueD;
-    BITMAP *gameover;
-    BITMAP *protagonistaM;
 
     int direccion;
     int animacion;

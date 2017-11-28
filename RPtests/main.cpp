@@ -44,6 +44,8 @@ int main()
    inicio();
 
     BITMAP *menu;
+    BTIMAP *gameover;
+    gameover=load_bmp("gamover.bmp";NULL)
     menu=load_bmp("menu.bmp",NULL);
 /*
        while(!key[KEY_ENTER])
@@ -87,6 +89,13 @@ int main()
                 a.hp--;
         }
             rest(1);
+        }
+        if (a.hp==0){
+            ~a();
+            ~enemigo1();
+            ~enemigo2();
+            ~arena();
+            blit(gameover,buffer,0,0,0,0,640,400);
         }
 
     readkey();

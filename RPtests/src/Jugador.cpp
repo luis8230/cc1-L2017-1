@@ -10,7 +10,7 @@ Jugador::Jugador(){
     ProtagonistaD= load_bitmap("0.bmp",NULL);
     ProtagonistaI= load_bitmap("2.bmp",NULL);
 
-    gameover=load_bitmap("gameover.bmp",NULL);
+
 
 
     direccion=0;
@@ -133,9 +133,4 @@ bool Jugador::NoAtaca(){
     return ataca =-1;
 }
 
-void Jugador::vida(){
-    if hp=0;
-    blit(gameover,buffer,0,0,0,0,640,400);
-    ~Jugador();
 
-}
