@@ -78,50 +78,17 @@ int main()
             }
             else:
                 a.hp--;
-
         }
-
          if(a.x==enemigo2.x||a.y==enemigo2.y){
             if (a.ataca==true){
                 enemigo2.hp--;
             }
             else:
                 a.hp--;
-
+        }
+            rest(1);
         }
 
-            rest(1);
-
-        }
-
-
-   }
-
-
-
-/*
-            Jugador a;
-            Esencial d;
-            NPC enemigo1("Aqua1.bmp");
-            NPC enemigo2("caballero1.bmp");
-
-
-    while(!key[KEY_ESC]) {
-             clear_to_color(buffer,0xFFFFFF);
-
-            escenario arena("arena.bmp",buffer);
-
-            a.keyboard();
-            pintar();
-            a.pintar();
-            enemigo1.pintar();
-            enemigo1.movimiento();
-            enemigo2.pintar();
-            enemigo2.movimiento();
-
-            rest(1);
-
-   }*/
     readkey();
     destroy_bitmap(buffer);
 

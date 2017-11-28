@@ -10,6 +10,9 @@ Jugador::Jugador(){
     ProtagonistaD= load_bitmap("0.bmp",NULL);
     ProtagonistaI= load_bitmap("2.bmp",NULL);
 
+    gameover=load_bitmap("gameover.bmp",NULL);
+
+
     direccion=0;
     animacion=0;
     x=0;
@@ -112,6 +115,12 @@ void Jugador::posiciona(int nx,int ny){
 
 Jugador:: ~Jugador(){
     destroy_bitmap(Protagonista);
+    destroy_bitmap(AtaqueD);
+    destroy_bitmap(AtaqueI);
+    destroy_bitmap(ProtagonistaA);
+    destroy_bitmap(ProtagonistaD);
+    destroy_bitmap(ProtagonistaI);
+
 }
 
 
@@ -122,4 +131,11 @@ bool Jugador::atacando(){
 
 bool Jugador::NoAtaca(){
     return ataca =-1;
+}
+
+void Jugador::vida(){
+    if hp=0;
+    blit(gameover,buffer,0,0,0,0,640,400);
+    ~Jugador();
+
 }
