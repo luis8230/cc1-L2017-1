@@ -42,7 +42,7 @@ int main()
 
 
    inicio();
-   int cambio=0;
+   int cambio=1;
    BITMAP *menu;
 
    switch (cambio)

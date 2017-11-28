@@ -15,11 +15,17 @@ void NPC::pintar()
 
 void NPC::movimiento()
 {
-    direccion= rand()%4;
-    int cambio;
-    cambio= direccion;
+    for (int i ;i<=Anchura;i++){
+        x+i;
+        if (i=Anchura){
+            for (int i;i>0;i++){
+                x-i;
+            }
+        }
+    }
+    /*
     if(cambio==0)
-        {
+    {
             y=y-desplazamiento;
 
     }
@@ -40,10 +46,8 @@ void NPC::movimiento()
              x=x+desplazamiento;
 
     }
-    else
-    {
 
-        }
+    */
 
       if (x<-32) x=-32;
       if (x>Anchura-32) x=Anchura-32;
