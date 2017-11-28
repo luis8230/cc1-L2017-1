@@ -42,24 +42,17 @@ int main()
 
 
    inicio();
-   int cambio=1;
-   BITMAP *menu;
 
-   switch (cambio)
-   {
-   case 1:
-       menu=load_bmp("menu.bmp",NULL);
-
+    BITMAP *menu;
+    menu=load_bmp("menu.bmp",NULL);
+/*
        while(!key[KEY_ENTER])
        {
            clear_to_color(buffer,0xFFFFFF);
            blit(menu,buffer,0,0,0,0,640,400);
 
        }
-       ++cambio;
-       break;
-
-   case 2:
+ */
         Jugador a;
         Esencial d;
         NPC enemigo1("Aqua1.bmp");

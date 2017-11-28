@@ -1,6 +1,7 @@
 #include "NPC.h"
 NPC:: NPC(char const *e){
     imagen= load_bitmap(e,NULL);
+    detectarvida();
 
 }
 
@@ -66,3 +67,14 @@ int NPC::gety(){
 void NPC::setposition(int nx,int ny){
     nx=x; ny=y;
 }
+
+void NPC::detectarvida(){
+    if (hp==0){
+        vive=false;
+        blit(/*aca pon la imagen*/)
+        ~NPC();
+    }
+}
+
+
+

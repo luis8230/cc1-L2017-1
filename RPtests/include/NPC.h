@@ -36,6 +36,7 @@ class NPC: Entidad
         int getx();
         int gety();
         void setposition(int nx,int ny);
+        void detectarvida();
 
 
 };
