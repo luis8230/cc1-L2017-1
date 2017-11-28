@@ -167,3 +167,63 @@
 	"escenario.h"
 	"Jugador.h"
 
+1511841841 source:c:\users\usuario\downloads\rptests\main.cpp
+	<iostream>
+	"allegro.h"
+	"escenario.h"
+	"musica.h"
+	"Entidad.h"
+	"colision.h"
+	"Esencial.h"
+	"NPC.h"
+	<time.h>
+
+1511824694 c:\users\usuario\downloads\rptests\include\escenario.h
+	<allegro.h>
+	<string>
+
+1511824694 c:\users\usuario\downloads\rptests\include\musica.h
+	<allegro.h>
+	<string>
+
+1511824694 c:\users\usuario\downloads\rptests\include\entidad.h
+	<allegro.h>
+
+1511824694 c:\users\usuario\downloads\rptests\include\colision.h
+	<allegro.h>
+	"Jugador.h"
+
+1511824694 c:\users\usuario\downloads\rptests\include\jugador.h
+	<allegro.h>
+	"Entidad.h"
+
+1511824694 c:\users\usuario\downloads\rptests\include\esencial.h
+	<allegro.h>
+	"Jugador.h"
+	"Entidad.h"
+
+1511824694 c:\users\usuario\downloads\rptests\include\npc.h
+	<allegro.h>
+	"Entidad.h"
+
+1511824694 source:c:\users\usuario\downloads\rptests\src\colision.cpp
+	"colision.h"
+
+1511824694 source:c:\users\usuario\downloads\rptests\src\entidad.cpp
+	"Entidad.h"
+
+1511824694 source:c:\users\usuario\downloads\rptests\src\escenario.cpp
+	"escenario.h"
+
+1511824694 source:c:\users\usuario\downloads\rptests\src\esencial.cpp
+	"Esencial.h"
+
+1511841275 source:c:\users\usuario\downloads\rptests\src\jugador.cpp
+	"Jugador.h"
+
+1511824694 source:c:\users\usuario\downloads\rptests\src\musica.cpp
+	"musica.h"
+
+1511824694 source:c:\users\usuario\downloads\rptests\src\npc.cpp
+	"NPC.h"
+

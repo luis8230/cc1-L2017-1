@@ -45,7 +45,11 @@ int Jugador::gety(){
 
 void Jugador::keyboard(){
     int dx=x; int dy=y;
-       if ( key[KEY_UP] )
+    int principio=0;
+
+
+        masked_blit(Protagonista,screen,0,0,x,y,32,32);
+    if ( key[KEY_UP] )
       {
            y-=desplazamiento;
            direccion = 3;
@@ -92,6 +96,8 @@ void Jugador::keyboard(){
       if (x>Anchura-64) x=Anchura-64;
       if (y<-32) y=-32;
       if (y>Altura-64) y=Altura-64;
+
+      rest(10);
 }
 
 
