@@ -99,7 +99,7 @@
 1511716454 c:\users\usuario\desktop\rptests\include\npc.h
 	<allegro.h>
 
-1511812376 source:d:\cc1-l2017-1-master\rptests\main.cpp
+1511823617 source:d:\cc1-l2017-1-master\rptests\main.cpp
 	<iostream>
 	"allegro.h"
 	"escenario.h"
@@ -125,7 +125,7 @@
 	<allegro.h>
 	"Jugador.h"
 
-1511736130 d:\cc1-l2017-1-master\rptests\include\jugador.h
+1511816643 d:\cc1-l2017-1-master\rptests\include\jugador.h
 	<allegro.h>
 	"Entidad.h"
 
@@ -138,16 +138,16 @@
 1511749500 source:d:\cc1-l2017-1-master\rptests\src\escenario.cpp
 	"escenario.h"
 
-1511810761 source:d:\cc1-l2017-1-master\rptests\src\jugador.cpp
+1511819046 source:d:\cc1-l2017-1-master\rptests\src\jugador.cpp
 	"Jugador.h"
 
 1511736130 source:d:\cc1-l2017-1-master\rptests\src\musica.cpp
 	"musica.h"
 
-1511812528 source:d:\cc1-l2017-1-master\rptests\src\npc.cpp
+1511827768 source:d:\cc1-l2017-1-master\rptests\src\npc.cpp
 	"NPC.h"
 
-1511789136 d:\cc1-l2017-1-master\rptests\include\npc.h
+1511821950 d:\cc1-l2017-1-master\rptests\include\npc.h
 	<allegro.h>
 	"Entidad.h"
 

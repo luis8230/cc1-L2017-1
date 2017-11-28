@@ -6,18 +6,17 @@
 class Jugador:Entidad
 {
     BITMAP *Protagonista;
-   /* BITMAP *personajeArriba;
-    BITMAP *personajeAbajo;
-    BITMAP *personajeDerecha;
-    BITMAP *personajeIzquierda;
-    BITMAP *personajeAtaqueNI;
-    BITMAP *personajeAtaqueND;
-    BITMAP *personajeAtaqueFA;
-    BITMAP *personajeAtaqueFB;
-    */int direccion;
+
+    int direccion;
     int animacion;
 
     public:
+
+        int hp=10;
+        int maxhp=10;
+        float attackSpeed = 0.3;
+        int attackDamage = 5;
+
         Jugador();
         ~Jugador();
         void pintar();

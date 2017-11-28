@@ -35,6 +35,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Entidad.h" />
+		<Unit filename="include/Esencial.h" />
 		<Unit filename="include/Jugador.h" />
 		<Unit filename="include/NPC.h" />
 		<Unit filename="include/colision.h" />
@@ -42,6 +43,7 @@
 		<Unit filename="include/musica.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Entidad.cpp" />
+		<Unit filename="src/Esencial.cpp" />
 		<Unit filename="src/Jugador.cpp" />
 		<Unit filename="src/NPC.cpp" />
 		<Unit filename="src/colision.cpp" />

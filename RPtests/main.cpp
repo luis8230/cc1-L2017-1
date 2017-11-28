@@ -91,8 +91,9 @@ int main()
             pintar();
             a.pintar();
             enemigo1.pintar();
-
+            enemigo1.movimiento();
             enemigo2.pintar();
+            enemigo2.movimiento();
 
             rest(1);
 

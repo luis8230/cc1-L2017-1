@@ -3,7 +3,7 @@
 Jugador::Jugador(){
 
    //Personaje Principal//
-    Protagonista= load_bitmap("isaac.bmp",NULL);
+    Protagonista= load_bitmap("Ike.bmp",NULL);
     direccion=0;
     animacion=0;
     x=0;
@@ -12,7 +12,8 @@ Jugador::Jugador(){
 }
 
 void Jugador::pintar(){
-    masked_blit(Protagonista,screen,0,0,x,y,64,64);
+    masked_blit(Protagonista,screen,0,0,x,y,32,32);
+    //rectfill(Protagonista, 0, 0, int(hp / maxhp) * 123, 32, 0xff0000);
 }
 
 
@@ -32,6 +33,8 @@ void Jugador::keyboard(){
       {
            y-=desplazamiento;
            direccion = 3;
+          // rect(Protagonista, 0, 0, 32*3, 32*3, 32);
+           // rectfill(Protagonista, 0, 0, 32*2, 32,  is_screen_bitmap(Protagonista));
       }
       if ( key[KEY_DOWN] )
       {

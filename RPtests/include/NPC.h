@@ -8,18 +8,36 @@ class NPC: Entidad
 
     BITMAP *imagen;
 
-    int x,y;
-    int cx,cy;
-    int animacion;
-    int estado;
-    int direccion;
-    int escena;
+
+
     public:
+        int x,y;
+        int cx,cy;
+        int animacion;
+        int estado;
+        int direccion; //1=arriba, 2= abajo 3= izquierda 4= derecha
+        int escena;
+        int hp=5;
+        int maxhp=5;
+        int ataque= 3;
+        bool vive= true;
+        bool movarriba= true;
+        bool movabajo= true;
+        bool movizqui= true;
+        bool movderec= true;
+
+        int spritex= 32;                int spritey= 32;
+        int spritexStart = 32 * 0;      int spriteyStart = 32 * 0;
+        bool agresivo= true;
+
         NPC(char const *e);
-        //void crea( BITMAP *nimg, int  ex, int ey, int dir, int _estado, int _lugar );
         void pintar();
         void movimiento();
-    private:
+        int getx();
+        int gety();
+        void setposition(int nx,int ny);
+
+
 };
 
 #endif // NPC_H
