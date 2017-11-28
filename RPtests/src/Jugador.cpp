@@ -3,7 +3,13 @@
 Jugador::Jugador(){
 
    //Personaje Principal//
-    Protagonista= load_bitmap("Ike.bmp",NULL);
+    Protagonista= load_bitmap("3.bmp",NULL);
+    AtaqueD = load_bitmap("5.bmp",NULL);
+    AtaqueI = load_bitmap("4.bmp",NULL);
+    ProtagonistaA= load_bitmap("1.bmp",NULL);
+    ProtagonistaD= load_bitmap("0.bmp",NULL);
+    ProtagonistaI= load_bitmap("2.bmp",NULL);
+
     direccion=0;
     animacion=0;
     x=0;
@@ -12,9 +18,19 @@ Jugador::Jugador(){
 }
 
 void Jugador::pintar(){
-    masked_blit(Protagonista,screen,0,0,x,y,32,32);
-    //rectfill(Protagonista, 0, 0, int(hp / maxhp) * 123, 32, 0xff0000);
+    keyboard();
+    //masked_blit(Protagonista,screen,0,0,x,y,32,32);
+     if ( ataca > 1 && ( direccion == 2 ) )
+    {
+           masked_blit(AtaqueD, buffer, 0, direccion*96, x-32, y-32, 96,96);
+    }
+    if ( ataca > 1 && ( direccion == 1 ) )
+    {
+           masked_blit(AtaqueI, buffer, 0, direccion*96, x-32, y-32, 96,96);
+    if ( ataca > 1 || ataca < 0) ataca++;
 }
+}
+
 
 
 int Jugador::getx(){
@@ -33,23 +49,39 @@ void Jugador::keyboard(){
       {
            y-=desplazamiento;
            direccion = 3;
-          // rect(Protagonista, 0, 0, 32*3, 32*3, 32);
-           // rectfill(Protagonista, 0, 0, 32*2, 32,  is_screen_bitmap(Protagonista));
-      }
+           masked_blit(ProtagonistaA,screen,0,0,x,y,32,32);
+          }
       if ( key[KEY_DOWN] )
       {
            y+=desplazamiento;
            direccion = 0;
+           masked_blit(Protagonista,screen,0,0,x,y,32,32);
       }
       if ( key[KEY_LEFT] )
       {
            x-=desplazamiento;
            direccion = 1;
+           masked_blit(ProtagonistaI,screen,0,0,x,y,32,32);
       }
       if ( key[KEY_RIGHT] )
       {
            x+=desplazamiento;
            direccion = 2;
+           masked_blit(ProtagonistaD,screen,0,0,x,y,32,32);
+      }
+       if ( key[KEY_RIGHT]&&key[KEY_SPACE] )
+      {
+          ataca=2;
+           x+=desplazamiento;
+           direccion = 2;
+           masked_blit(ProtagonistaD,screen,0,0,x,y,32,32);
+      }
+       if ( key[KEY_LEFT]&&key[KEY_SPACE] )
+      {
+           ataca=2;
+           x+=desplazamiento;
+           direccion = 2;
+           masked_blit(ProtagonistaD,screen,0,0,x,y,32,32);
       }
       if ( dx != x || dy != y )
       {
@@ -98,3 +130,12 @@ Jugador:: ~Jugador(){
     destroy_bitmap(Protagonista);
 }
 
+
+bool Jugador::atacando(){
+    return ataca>1;
+}
+
+
+bool Jugador::NoAtaca(){
+    return ataca =-1;
+}

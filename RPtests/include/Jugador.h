@@ -6,9 +6,15 @@
 class Jugador:Entidad
 {
     BITMAP *Protagonista;
+    BITMAP *ProtagonistaA;
+    BITMAP *ProtagonistaD;
+    BITMAP *ProtagonistaI;
+    BITMAP *AtaqueI;
+    BITMAP *AtaqueD;
 
     int direccion;
     int animacion;
+    int ataca= 0;
 
     public:
 
@@ -22,9 +28,13 @@ class Jugador:Entidad
         void pintar();
         int getx(); int gety();
 
+
         void keyboard();
         void choques();
         void posiciona(int nx,int ny);
+        bool atacando();
+        bool NoAtaca();
+
 };
 
 #endif // JUGADOR_H
