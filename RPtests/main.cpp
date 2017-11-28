@@ -79,6 +79,24 @@ int main()
             enemigo2.pintar();
             enemigo2.movimiento();
 
+        if(a.x==enemigo1.x||a.y==enemigo1.y){
+            if (a.ataca==true){
+                enemigo1.hp--;
+            }
+            else:
+                a.hp--;
+
+        }
+
+         if(a.x==enemigo2.x||a.y==enemigo2.y){
+            if (a.ataca==true){
+                enemigo2.hp--;
+            }
+            else:
+                a.hp--;
+
+        }
+
             rest(1);
 
         }
