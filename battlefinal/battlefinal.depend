@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1511986966 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\src\arena.cpp
+	"arena.h"
+
+1511986955 c:\users\usuario\desktop\nueva carpeta\battlefinal\include\arena.h
+	<allegro.h>
+
+1512002201 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\main.cpp
+	<iostream>
+	<allegro.h>
+	"arena.h"
+
+1512000997 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\src\warrior.cpp
+	"warrior.h"
+
+1512001375 c:\users\usuario\desktop\nueva carpeta\battlefinal\include\warrior.h
+	<allegro.h>
+
+1512002861 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\src\musica.cpp
+	"musica.h"
+
+1512002812 c:\users\usuario\desktop\nueva carpeta\battlefinal\include\musica.h
+	<allegro.h>
+
