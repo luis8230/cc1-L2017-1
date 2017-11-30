@@ -5,7 +5,7 @@ void crear_bala(int& n_disparos, const int max_disparos ,struct Balas disparos[]
                 const int X, const int Y , const int dy)
 {
 
-              if( n_disparos < max_disparos-1){
+              if( n_disparos < max_disparos-1){ // n -1 disparos permitidos
                    n_disparos++;
 
                    disparos[n_disparos].x  = X+11;

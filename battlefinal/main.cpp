@@ -1,6 +1,7 @@
 #include <iostream>
 #include <allegro.h>
 #include "arena.h"
+#include "bala.h"
 
 
 using namespace std;
@@ -37,13 +38,32 @@ int main()
     inicia_allegro();
     inicia_audio(70,70);
 
+
+
+
+
+
+
+
     MIDI *fondo=load_midi("musica.mid");
 
     play_midi(fondo,0);
     while (!key[KEY_ESC]){
+
+
         blit(buffer,screen,0,0,0,0,640,480);
 
+
         arena("arena.bmp",buffer);
+
+        bala a(320,240,buffer);
+
+
+        rest(20);
+
+
+
+
 
 
     }

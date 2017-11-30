@@ -35,10 +35,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/arena.h" />
-		<Unit filename="include/disparos.h" />
+		<Unit filename="include/bala.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/arena.cpp" />
-		<Unit filename="src/disparos.cpp" />
+		<Unit filename="src/bala.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
