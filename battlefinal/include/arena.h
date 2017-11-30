@@ -6,10 +6,11 @@
 class arena
 {
     BITMAP *buffer;
-    BITMAP *escenario;
-
 
     public:
+
+        BITMAP *escenario;
+
         arena(const char *a,BITMAP *b);
 
         void pintar();
