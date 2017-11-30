@@ -16,7 +16,7 @@ class bala
     BITMAP *buffer;
 
     public:
-        bala(int x,int y,BITMAP *b);
+        bala(int &x,int &y,BITMAP *b);
 
         void crearbala();
         void colsion(int x1,int y1,int x2,int y2);

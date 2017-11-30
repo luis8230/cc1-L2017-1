@@ -1,6 +1,7 @@
 #include <iostream>
 #include <allegro.h>
 #include "arena.h"
+#include "bala.h"
 
 
 
@@ -82,7 +83,11 @@ int main()
         if(b.hp==0){masked_blit(corvac,buffer,0,0,560,50,30,30);}
         */
 
+        int ancho=Anchura;
+        int alto=Altura;
 
+        bala b(ancho,alto,buffer);
+        b.crearbala();
 
 
         rest(20);

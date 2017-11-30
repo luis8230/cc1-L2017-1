@@ -1,6 +1,6 @@
 #include "bala.h"
 
-bala::bala(int x,int y,BITMAP *b)
+bala::bala(int &x,int &y,BITMAP *b)
 {
     buffer=b;
     posx=x;
