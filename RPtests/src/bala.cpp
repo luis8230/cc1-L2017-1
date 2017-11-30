@@ -20,7 +20,7 @@ void bala::crearbala()
     {
         while(posx<640)
         {
-            blit(proyectilh,buffer,0,0,posx,posy,15,10);
+            masked_blit(proyectilh,buffer,0,0,posx,posy,32,32);
             posx++;
         }
 
@@ -29,7 +29,7 @@ void bala::crearbala()
     {
         while(posx>0)
         {
-            blit(proyectilh,buffer,0,0,posx,posy,15,10);
+            masked_blit(proyectilh,buffer,0,0,posx,posy,32,32);
             posx--;
         }
 
@@ -38,7 +38,7 @@ void bala::crearbala()
     {
         while(posx<0)
         {
-            blit(proyectilv,buffer,0,0,posx,posy,10,15);
+            masked_blit(proyectilv,buffer,0,0,posx,posy,32,32);
             posy--;
         }
 
@@ -47,7 +47,7 @@ void bala::crearbala()
     {
         while(posx<480)
         {
-            blit(proyectilh,buffer,0,0,posx,posy,15,10);
+            masked_blit(proyectilh,buffer,0,0,posx,posy,32,32);
             posx++;
         }
 

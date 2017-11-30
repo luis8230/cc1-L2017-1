@@ -11,6 +11,7 @@ Jugador::Jugador(){
     ProtagonistaA= load_bitmap("1.bmp",NULL);
     ProtagonistaD= load_bitmap("0.bmp",NULL);
     ProtagonistaI= load_bitmap("2.bmp",NULL);
+    disparo= load_bitmap("bala.bmp",NULL);
 
     AtaqueI2;
     AtaqueD2;
@@ -49,8 +50,9 @@ int Jugador::gety(){
 
 void Jugador::keyboard(){
     int dx=x; int dy=y;
+    int sx=x; int sy=y;
     int principio=0;
-
+    bool shoot=false;
 
         masked_blit(Protagonista,screen,0,0,x,y,32,32);
     if ( key[KEY_UP] )
@@ -85,6 +87,9 @@ void Jugador::keyboard(){
            masked_blit(AtaqueD1,screen,0,0,x,y,32,32);
            rest(1);
            masked_blit(AtaqueD2,screen,0,0,x,y,32,32);
+           shoot = true;
+            sx+=5;
+            masked_blit(disparo,screen,0,0,sx,y,13,14);
       }
        if ( key[KEY_LEFT]&&key[KEY_SPACE] )
       {
@@ -94,12 +99,23 @@ void Jugador::keyboard(){
            masked_blit(AtaqueI1,screen,0,0,x,y,32,32);
            rest(1);
            masked_blit(AtaqueI2,screen,0,0,x,y,32,32);
+           shoot=true;
+
+           sx-=5;
+          masked_blit(disparo,screen,0,0,sx,y,13,14);
       }
       if ( dx != x || dy != y )
       {
            animacion++;
            if ( animacion > 2 ) animacion = 0;
       }
+      if(shoot=true){
+
+         if(sx>Anchura)
+            shoot=false;
+         if (sx<0)
+            shoot= false;
+     }
       if (x<=-32) x=0;
       if (x>Anchura-64) x=Anchura-64;
       if (y<=-32) y=0;

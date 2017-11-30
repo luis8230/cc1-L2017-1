@@ -109,6 +109,7 @@ int main()
             Jugador a;
             Contrincante b;
 
+
             a.posiciona(320,200);
             b.posiciona(200,200);
 
