@@ -15,25 +15,26 @@ class Jugador:Entidad
 
     int direccion;
     int animacion;
-
+    int ataca= 0;
 
     public:
 
-        int hp=3;
+        int hp=10;
+        int maxhp=10;
         float attackSpeed = 0.3;
-        bool ataca=false;
+        int attackDamage = 5;
 
         Jugador();
-
+        ~Jugador();
         void pintar();
         int getx(); int gety();
 
 
         void keyboard();
-
+        void choques();
         void posiciona(int nx,int ny);
-
-
+        bool atacando();
+        bool NoAtaca();
 
 };
 

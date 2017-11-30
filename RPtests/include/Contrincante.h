@@ -8,18 +8,21 @@ class Contrincante:Entidad
 BITMAP *RivalD;
 BITMAP *RivalR;
 BITMAP *RivalI;
+BITMAP *RivalAI; BITMAP *RivalAD;
 
     int direccion;
     int animacion;
-
+    int ataca= 0;
 
     public:
 
-        int hp=3;
+        int hp=10;
+        int maxhp=10;
         float attackSpeed = 0.3;
-        bool ataca=false;
+        int attackDamage = 5;
 
         Contrincante();
+        ~Contrincante();
         void pintar();
         int getx(); int gety();
         void keyboard();

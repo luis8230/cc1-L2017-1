@@ -1,6 +1,7 @@
 #include <iostream>
 #include "allegro.h"
 #include "escenario.h"
+#include "musica.h"
 #include "Entidad.h"
 #include "Jugador.h"
 #include "Contrincante.h"
@@ -43,11 +44,6 @@ void pintar()
     blit(buffer, screen, 0, 0, 0, 0, Anchura, Altura);
 }
 
-bool colision(int x1,int y1, int w1 int, h1,int x2, int y2, int w2, int h2)
-{
-    return((x1<x2+w2)&&(x2<x1+w1)&&(y1<y2+h2)&&(y2<y1+h1))
-}
-
 int main()
 {
 
@@ -65,6 +61,50 @@ int main()
     MIDI *fondo=load_midi("musica.mid");
 
     play_midi(fondo,1);
+/*
+   switch (cambio)
+   {
+   case 1:
+       menu=load_bmp("menu.bmp",NULL);
+
+       while(!key[KEY_ENTER])
+       {
+           clear_to_color(buffer,0xFFFFFF);
+           blit(menu,buffer,0,0,0,0,640,400);
+
+       }
+       ++cambio;
+       break;
+
+   case 2:
+        Jugador a;
+        Esencial d;
+        NPC enemigo1("Aqua1.bmp");
+        NPC enemigo2("caballero1.bmp");
+
+
+        while(!key[KEY_ESC]) {
+            clear_to_color(buffer,0xFFFFFF);
+
+            escenario arena("arena.bmp",buffer);
+
+            a.keyboard();
+            pintar();
+            a.pintar();
+            enemigo1.pintar();
+            enemigo1.movimiento();
+            enemigo2.pintar();
+            enemigo2.movimiento();
+
+            rest(1);
+
+        }
+
+
+   }
+
+*/
+
 
             Jugador a;
             Contrincante b;
@@ -74,30 +114,15 @@ int main()
             b.posiciona(200,200);
 
     while(!key[KEY_ESC]) {
-            clear_to_color(buffer,0xFFFFFF);
+             clear_to_color(buffer,0xFFFFFF);
 
-            printfondo(espacio,buffer);
+             printfondo(espacio,buffer);
             escenario arena("arena.bmp",buffer);
-            a.pintar();
-            b.pintar();
             b.keyboard();
             a.keyboard();
             pintar();
             a.pintar();
             b.pintar();
-
-            if (colision(a.x,a.y,32,32,b.x,b.y,32,32)&&a.ataca)
-            {
-                b.hp--;
-            }
-            if (colision(a.x,a.y,32,32,b.x,b.y,32,32)&&b.ataca)
-            {
-                a.hp--;
-            }
-
-
-
-
 
 
             rest(1);

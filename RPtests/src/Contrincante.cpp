@@ -1,10 +1,12 @@
 #include "Contrincante.h"
 
 Contrincante::Contrincante(){
-    RivalA= load_bitmap("RivalA.bmp",NULL);
-    RivalD= load_bitmap("RivalD.bmp",NULL);
+    RivalA= load_bitmap("blueU.bmp",NULL);
+    RivalD= load_bitmap("blueD.bmp",NULL);
     RivalR= load_bitmap("RivalR.bmp",NULL);
-    RivalI= load_bitmap("RivalI.bmp",NULL);
+    RivalI= load_bitmap("blueL.bmp",NULL);
+    RivalAI= load_bitmap("blueAL1.bmp",NULL);
+    RivalAD= load_bitmap("blueAR1.bmp",NULL);
 
     direccion=0;
     animacion=0;
@@ -37,8 +39,7 @@ void Contrincante::keyboard(){
     int dx=x; int dy=y;
     int principio=0;
 
-
-    masked_blit(RivalA,screen,0,0,x,y,32,32);
+        masked_blit(RivalD,screen,0,0,x,y,32,32);
     if ( key[KEY_W] )
       {
            y-=desplazamiento;
@@ -65,7 +66,7 @@ void Contrincante::keyboard(){
       }
        if ( key[KEY_D]&&key[KEY_LCONTROL] )
       {
-            ataca=true;
+          ataca=2;
 
            direccion = 2;
            masked_blit(RivalD,screen,0,0,x,y,32,32);
@@ -74,7 +75,7 @@ void Contrincante::keyboard(){
       }
        if ( key[KEY_A]&&key[KEY_LCONTROL] )
       {
-           ataca=true;
+           ataca=2;
 
            direccion = 2;
            masked_blit(RivalD,screen,0,0,x,y,32,32);
@@ -104,4 +105,7 @@ void Contrincante::posiciona(int nx,int ny){
 
 
 
+Contrincante:: ~Contrincante(){
+    destroy_bitmap(RivalA);
+}
 
