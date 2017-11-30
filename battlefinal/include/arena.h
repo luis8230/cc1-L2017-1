@@ -5,15 +5,14 @@
 
 class arena
 {
-    BITMAP *escenario;
     BITMAP *buffer;
+    BITMAP *escenario;
+
 
     public:
-        arena(char const *a,BITMAP *b);
+        arena(const char *a,BITMAP *b);
 
-        void cargar(char const *nombre);
         void pintar();
-
 
 
 };

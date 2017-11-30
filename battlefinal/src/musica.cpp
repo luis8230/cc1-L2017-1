@@ -1,9 +1,8 @@
 #include "musica.h"
 
-int musica::Musica(char *archivo)
-    {
-        MIDI *sonido;
-        sonido=load_midi(archivo);
-        play_midi(sonido,FALSE);
+musica::musica(const char *archivo)
+{
+    fondo=load_midi(archivo);
+    play_midi(fondo,1);
 
-    }
+}

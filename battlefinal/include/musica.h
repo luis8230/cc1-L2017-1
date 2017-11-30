@@ -5,8 +5,12 @@
 
 class musica
 {
+    MIDI *fondo;
+
+
     public:
-        int Musica(char *archivo);
+
+         musica(char const *a);
 
 
 

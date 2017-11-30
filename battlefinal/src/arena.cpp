@@ -2,15 +2,9 @@
 
 arena::arena(const char *a,BITMAP *b)
 {
-
     buffer=b;
-    cargar(a);
+    escenario=load_bmp(a,NULL);
     pintar();
-}
-
-void arena::cargar(char const *nombre)
-{
-    escenario=load_bmp(nombre,NULL);
 }
 
 void arena::pintar()
