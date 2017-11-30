@@ -51,53 +51,57 @@
 	<allegro.h>
 	"Jugador.h"
 
-1511746283 source:c:\users\usuario\desktop\rptests\main.cpp
+1512030679 source:c:\users\usuario\desktop\rptests\main.cpp
 	<iostream>
 	"allegro.h"
 	"escenario.h"
-	"musica.h"
 	"Entidad.h"
-	"colision.h"
+	"Jugador.h"
+	"Contrincante.h"
+	"bala.h"
+	"design.h"
 
-1511729740 c:\users\usuario\desktop\rptests\include\escenario.h
+1512017578 c:\users\usuario\desktop\rptests\include\escenario.h
 	<allegro.h>
 	<string>
 
-1511716454 c:\users\usuario\desktop\rptests\include\musica.h
+1512017578 c:\users\usuario\desktop\rptests\include\musica.h
 	<allegro.h>
 	<string>
 
-1511729348 c:\users\usuario\desktop\rptests\include\entidad.h
+1512028978 c:\users\usuario\desktop\rptests\include\entidad.h
 	<allegro.h>
 
 1511746169 c:\users\usuario\desktop\rptests\include\colision.h
 	<allegro.h>
 	"Jugador.h"
 
-1511746301 c:\users\usuario\desktop\rptests\include\jugador.h
+1512031120 c:\users\usuario\desktop\rptests\include\jugador.h
 	<allegro.h>
 	"Entidad.h"
 
 1511746169 source:c:\users\usuario\desktop\rptests\src\colision.cpp
 	"colision.h"
 
-1511716454 source:c:\users\usuario\desktop\rptests\src\entidad.cpp
+1512017578 source:c:\users\usuario\desktop\rptests\src\entidad.cpp
 	"Entidad.h"
 
-1511733822 source:c:\users\usuario\desktop\rptests\src\escenario.cpp
+1512017578 source:c:\users\usuario\desktop\rptests\src\escenario.cpp
 	"escenario.h"
 
-1511746068 source:c:\users\usuario\desktop\rptests\src\jugador.cpp
+1512028978 source:c:\users\usuario\desktop\rptests\src\jugador.cpp
 	"Jugador.h"
 
-1511716454 source:c:\users\usuario\desktop\rptests\src\musica.cpp
+1512017578 source:c:\users\usuario\desktop\rptests\src\musica.cpp
 	"musica.h"
 
-1511716454 source:c:\users\usuario\desktop\rptests\src\npc.cpp
+1512017578 source:c:\users\usuario\desktop\rptests\src\npc.cpp
 	"NPC.h"
 
-1511716454 c:\users\usuario\desktop\rptests\include\npc.h
+1512017578 c:\users\usuario\desktop\rptests\include\npc.h
 	<allegro.h>
+	"Entidad.h"
+	<time.h>
 
 1511823617 source:d:\cc1-l2017-1-master\rptests\main.cpp
 	<iostream>
@@ -306,5 +310,22 @@
 	<allegro.h>
 
 1512020343 d:\trabajos ccomp\cc1-l2017-1-master\rptests\design.h
+	<allegro.h>
+
+1512031135 c:\users\usuario\desktop\rptests\include\contrincante.h
+	<allegro.h>
+	"Entidad.h"
+
+1512017578 c:\users\usuario\desktop\rptests\include\bala.h
+	<allegro.h>
+
+1512017578 c:\users\usuario\desktop\rptests\design.h
+	<allegro.h>
+
+1512030736 source:c:\users\usuario\desktop\rptests\src\contrincante.cpp
+	"Contrincante.h"
+
+1512017578 source:c:\users\usuario\desktop\rptests\design.cpp
+	"design.h"
 	<allegro.h>
 

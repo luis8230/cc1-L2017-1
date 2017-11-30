@@ -87,7 +87,7 @@ void Jugador::keyboard(){
            masked_blit(AtaqueD1,screen,0,0,x,y,32,32);
            rest(1);
            masked_blit(AtaqueD2,screen,0,0,x,y,32,32);
-           shoot = true;
+           ataca=true;
             sx+=5;
             masked_blit(disparo,screen,0,0,sx,y,13,14);
       }
@@ -99,7 +99,7 @@ void Jugador::keyboard(){
            masked_blit(AtaqueI1,screen,0,0,x,y,32,32);
            rest(1);
            masked_blit(AtaqueI2,screen,0,0,x,y,32,32);
-           shoot=true;
+           ataca=true;
 
            sx-=5;
           masked_blit(disparo,screen,0,0,sx,y,13,14);
@@ -109,12 +109,12 @@ void Jugador::keyboard(){
            animacion++;
            if ( animacion > 2 ) animacion = 0;
       }
-      if(shoot=true){
+      if(ataca=true){
 
          if(sx>Anchura)
-            shoot=false;
+            ataca=false;
          if (sx<0)
-            shoot= false;
+            ataca= false;
      }
       if (x<=-32) x=0;
       if (x>Anchura-64) x=Anchura-64;
@@ -132,41 +132,5 @@ void Jugador::posiciona(int nx,int ny){
 }
 
 
-void Jugador::choques()
-{
-    bool chocar=false;
-    bool prestocambio=true;
-
-    BITMAP *mapa=load_bmp("bosque-choque.bmp",NULL);
 
 
-    for (int i=0;i<30;i++){
-        for (int j=0;j<15;i++){
-            if(getpixel(mapa,x+i,y+j)==0xff0000){
-                chocar=true;
-            }
-            if(getpixel(mapa,x+i,y+j)==0x00ff00){
-                prestocambio=true;
-            }
-        }
-
-    }
-    if (chocar){
-        posiciona(x,y);
-    }
-}
-
-
-Jugador:: ~Jugador(){
-    destroy_bitmap(Protagonista);
-}
-
-
-bool Jugador::atacando(){
-    return ataca>1;
-}
-
-
-bool Jugador::NoAtaca(){
-    return ataca =-1;
-}

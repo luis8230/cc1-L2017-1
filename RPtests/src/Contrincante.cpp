@@ -38,7 +38,7 @@ void Contrincante::keyboard(){
     int principio=0;
 
 
-        masked_blit(RivalD,screen,0,0,x,y,32,32);
+    masked_blit(RivalA,screen,0,0,x,y,32,32);
     if ( key[KEY_W] )
       {
            y-=desplazamiento;
@@ -65,7 +65,7 @@ void Contrincante::keyboard(){
       }
        if ( key[KEY_D]&&key[KEY_LCONTROL] )
       {
-          ataca=2;
+            ataca=true;
 
            direccion = 2;
            masked_blit(RivalD,screen,0,0,x,y,32,32);
@@ -74,7 +74,7 @@ void Contrincante::keyboard(){
       }
        if ( key[KEY_A]&&key[KEY_LCONTROL] )
       {
-           ataca=2;
+           ataca=true;
 
            direccion = 2;
            masked_blit(RivalD,screen,0,0,x,y,32,32);
@@ -104,7 +104,4 @@ void Contrincante::posiciona(int nx,int ny){
 
 
 
-Contrincante:: ~Contrincante(){
-    destroy_bitmap(RivalA);
-}
 
