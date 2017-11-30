@@ -5,7 +5,7 @@
 1512005993 c:\users\usuario\desktop\nueva carpeta\battlefinal\include\arena.h
 	<allegro.h>
 
-1512005735 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\main.cpp
+1512006435 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\main.cpp
 	<iostream>
 	<allegro.h>
 	"arena.h"

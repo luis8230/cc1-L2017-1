@@ -39,7 +39,7 @@ int main()
 
     MIDI *fondo=load_midi("musica.mid");
 
-    play_midi(fondo,1);
+    play_midi(fondo,0);
     while (!key[KEY_ESC]){
         blit(buffer,screen,0,0,0,0,640,480);
 
