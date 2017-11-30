@@ -5,6 +5,7 @@
 #include "Entidad.h"
 #include "Jugador.h"
 #include "Contrincante.h"
+#include "bala.h"
 using namespace std;
 
 const int Anchura = 640;

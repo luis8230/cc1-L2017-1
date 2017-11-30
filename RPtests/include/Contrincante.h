@@ -4,7 +4,10 @@
 #include "Entidad.h"
 
 class Contrincante:Entidad
-{BITMAP *Rival;
+{BITMAP *RivalA;
+BITMAP *RivalD;
+BITMAP *RivalR;
+BITMAP *RivalI;
 
     int direccion;
     int animacion;

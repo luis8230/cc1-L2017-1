@@ -277,7 +277,7 @@
 1511831354 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\esencial.cpp
 	"Esencial.h"
 
-1512008493 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\jugador.cpp
+1512010883 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\jugador.cpp
 	"Jugador.h"
 
 1512006900 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\musica.cpp
@@ -286,10 +286,16 @@
 1512005367 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\npc.cpp
 	"NPC.h"
 
-1512010361 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\contrincante.cpp
+1512012064 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\contrincante.cpp
 	"Contrincante.h"
 
-1512010114 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\contrincante.h
+1512011964 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\contrincante.h
 	<allegro.h>
 	"Entidad.h"
+
+1512016630 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\bala.cpp
+	"bala.h"
+
+1512004506 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\bala.h
+	<allegro.h>
 
