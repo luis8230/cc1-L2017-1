@@ -6,6 +6,7 @@
 #include "Jugador.h"
 #include "Contrincante.h"
 #include "bala.h"
+#include "design.h"
 using namespace std;
 
 const int Anchura = 640;
@@ -52,6 +53,9 @@ int main()
    inicio();
    int cambio=0;
    BITMAP *menu;
+   BITMAP *portada =load_bitmap("menu.bmp",NULL);
+   BITMAP *espacio =load_bitmap ("menu.bmp",NULL);
+   Portada(portada);
     inicia_audio(70,70);
 
     MIDI *fondo=load_midi("musica.mid");
@@ -111,6 +115,7 @@ int main()
     while(!key[KEY_ESC]) {
              clear_to_color(buffer,0xFFFFFF);
 
+             printfondo(espacio,buffer);
             escenario arena("arena.bmp",buffer);
             b.keyboard();
             a.keyboard();

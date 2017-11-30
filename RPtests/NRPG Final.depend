@@ -227,7 +227,7 @@
 1511824694 source:c:\users\usuario\downloads\rptests\src\npc.cpp
 	"NPC.h"
 
-1512010204 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\main.cpp
+1512022775 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\main.cpp
 	<iostream>
 	"allegro.h"
 	"escenario.h"
@@ -235,6 +235,8 @@
 	"Entidad.h"
 	"Jugador.h"
 	"Contrincante.h"
+	"bala.h"
+	"design.h"
 
 1511831354 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\escenario.h
 	<allegro.h>
@@ -297,5 +299,12 @@
 	"bala.h"
 
 1512004506 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\bala.h
+	<allegro.h>
+
+1512022664 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\design.cpp
+	"design.h"
+	<allegro.h>
+
+1512020343 d:\trabajos ccomp\cc1-l2017-1-master\rptests\design.h
 	<allegro.h>
 
