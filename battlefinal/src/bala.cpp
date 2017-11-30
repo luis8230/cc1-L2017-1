@@ -6,49 +6,57 @@ bala::bala(int x,int y,BITMAP *b)
     posx=x;
     posy=y;
 
-    proyectilh=create_bitmap(15,10);
-    clear_to_color(proyectilh,0x000000);
-    proyectilv=create_bitmap(10,15);
-    clear_to_color(proyectilv,0x000000);
+    proyectilh=load_bitmap("balah.bmp",NULL);
+
+    proyectilv=load_bmp("balav.bmp",NULL);
+
 }
 
 void bala::crearbala()
 {
     if(key[KEY_SPACE]&&key[KEY_RIGHT])
     {
-        while(posx<640)
-        {
-            blit(proyectilh,buffer,0,0,posx,posy,15,10);
-            posx++;
-        }
+            dy=0;
+            dx=+8;
+            posx+=dx;
+            posy+=dy;
+            blit(proyectilh,buffer,0,0,posx,posy,12,6);
 
     }
     if(key[KEY_SPACE]&&key[KEY_LEFT])
     {
-        while(posx>0)
-        {
-            blit(proyectilh,buffer,0,0,posx,posy,15,10);
-            posx--;
-        }
+            dy=0;
+            dx=-8;
+            posx+=dx;
+            posy+=dy;
+            blit(proyectilh,buffer,0,0,posx,posy,12,6);
+
 
     }
     if(key[KEY_SPACE]&&key[KEY_UP])
     {
-        while(posx<0)
-        {
-            blit(proyectilv,buffer,0,0,posx,posy,10,15);
-            posy--;
-        }
+
+            dy=-8;
+            dx=0;
+            posx+=dx;
+            posy+=dy;
+            blit(proyectilh,buffer,0,0,posx,posy,6,12);
+
+
 
     }
     if(key[KEY_SPACE]&&key[KEY_DOWN])
     {
-        while(posx<480)
-        {
-            blit(proyectilh,buffer,0,0,posx,posy,15,10);
-            posx++;
-        }
+
+            dy=+8;
+            dx=0;
+            posx+=dx;
+            posy+=dy;
+            blit(proyectilh,buffer,0,0,posx,posy,6,12);
+
 
     }
+
+
 }
 

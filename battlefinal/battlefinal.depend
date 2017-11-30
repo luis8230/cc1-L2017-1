@@ -5,11 +5,11 @@
 1512005993 c:\users\usuario\desktop\nueva carpeta\battlefinal\include\arena.h
 	<allegro.h>
 
-1512013757 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\main.cpp
+1512022731 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\main.cpp
 	<iostream>
 	<allegro.h>
 	"arena.h"
-	"disparos.h"
+	"bala.h"
 
 1512000997 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\src\warrior.cpp
 	"warrior.h"
@@ -30,9 +30,9 @@
 1512013044 c:\users\usuario\desktop\nueva carpeta\battlefinal\include\disparos.h
 	<allegro.h>
 
-1512014978 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\src\bala.cpp
+1512021298 source:c:\users\usuario\desktop\nueva carpeta\battlefinal\src\bala.cpp
 	"bala.h"
 
-1512015062 c:\users\usuario\desktop\nueva carpeta\battlefinal\include\bala.h
+1512020971 c:\users\usuario\desktop\nueva carpeta\battlefinal\include\bala.h
 	<allegro.h>
 

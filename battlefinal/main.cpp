@@ -20,6 +20,8 @@ void inicia_allegro(){
     set_color_depth(32);
     set_gfx_mode(GFX_AUTODETECT_WINDOWED,640,480,0,0);
     buffer=create_bitmap(Anchura,Altura);
+
+
 }
 
 int inicia_audio(int izquierda, int derecha){
@@ -27,9 +29,9 @@ int inicia_audio(int izquierda, int derecha){
        allegro_message("Error: inicializando sistema de sonido\n%s\n", allegro_error);
        return 1;
     }
-
 	set_volume(izquierda, derecha);
 }
+
 
 
 
@@ -53,10 +55,12 @@ int main()
 
         blit(buffer,screen,0,0,0,0,640,480);
 
+        bala a(320,240,buffer);
+        a.crearbala();
 
         arena("arena.bmp",buffer);
 
-        bala a(320,240,buffer);
+
 
 
         rest(20);
