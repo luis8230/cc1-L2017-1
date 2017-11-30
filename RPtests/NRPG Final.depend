@@ -227,3 +227,69 @@
 1511824694 source:c:\users\usuario\downloads\rptests\src\npc.cpp
 	"NPC.h"
 
+1512010204 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\main.cpp
+	<iostream>
+	"allegro.h"
+	"escenario.h"
+	"musica.h"
+	"Entidad.h"
+	"Jugador.h"
+	"Contrincante.h"
+
+1511831354 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\escenario.h
+	<allegro.h>
+	<string>
+
+1512006900 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\musica.h
+	<allegro.h>
+	<string>
+
+1511843524 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\entidad.h
+	<allegro.h>
+
+1511831354 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\colision.h
+	<allegro.h>
+	"Jugador.h"
+
+1512008406 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\jugador.h
+	<allegro.h>
+	"Entidad.h"
+
+1511831354 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\esencial.h
+	<allegro.h>
+	"Jugador.h"
+	"Entidad.h"
+
+1511902306 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\npc.h
+	<allegro.h>
+	"Entidad.h"
+	<time.h>
+
+1511831354 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\colision.cpp
+	"colision.h"
+
+1511831354 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\entidad.cpp
+	"Entidad.h"
+
+1511831354 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\escenario.cpp
+	"escenario.h"
+
+1511831354 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\esencial.cpp
+	"Esencial.h"
+
+1512008493 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\jugador.cpp
+	"Jugador.h"
+
+1512006900 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\musica.cpp
+	"musica.h"
+
+1512005367 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\npc.cpp
+	"NPC.h"
+
+1512010361 source:d:\trabajos ccomp\cc1-l2017-1-master\rptests\src\contrincante.cpp
+	"Contrincante.h"
+
+1512010114 d:\trabajos ccomp\cc1-l2017-1-master\rptests\include\contrincante.h
+	<allegro.h>
+	"Entidad.h"
+

@@ -5,18 +5,12 @@
 
 class musica
 {
-
-    MIDI *song;
+   MIDI *fondo;
 
     public:
 
-     musica(char const *a);
-    ~musica();
+      musica(char const *a);
 
-    void play();
-    void stop();
-    void pause();
-    void resume();
 };
 
 #endif // MUSICA_H

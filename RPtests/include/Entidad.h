@@ -16,8 +16,8 @@ class Entidad
         int x;
         int y;
 
-        const int Anchura = 800;
-        const int Altura  = 600;
+        const int Anchura = 690;
+        const int Altura  = 400;
         BITMAP *buffer = create_bitmap(Anchura, Altura);
 
         int desplazamiento=4;

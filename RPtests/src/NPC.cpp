@@ -1,7 +1,6 @@
 #include "NPC.h"
 NPC:: NPC(char const *e){
     imagen= load_bitmap(e,NULL);
-    detectarvida();
 
 }
 
@@ -9,51 +8,52 @@ NPC:: NPC(char const *e){
 
 void NPC::pintar()
 {
-             movimiento();
-            masked_blit(imagen, screen, 0, 0, x, y, 64,64);
+            movimiento();
+            masked_blit(imagen, screen, 0, 0, x, y, 32,32);
 
 }
 
 void NPC::movimiento()
 {
-    for (int i ;i<=Anchura;i++){
-        x+i;
-        if (i=Anchura){
-            for (int i;i>0;i++){
-                x-i;
-            }
-        }
-    }
-    /*
+    random();
+    int cambio;
+    cambio= direccion;
     if(cambio==0)
-    {
-            y=y-desplazamiento;
+        {
+            y=y-desplazamiento+5;
+            pintar();
 
     }
     else if (cambio == 1) // Down
     {
-             y=y+desplazamiento;
-
+             y=y+desplazamiento+5;
+            pintar();
     }
 
     if (cambio == 2) // Left
     {
-             x=x-desplazamiento;
+             x=x-desplazamiento+5;
+             pintar();
              }
 
      if (cambio == 3) // Right
     {
 
-             x=x+desplazamiento;
+             x=x+desplazamiento+5;
+             pintar();
+             cambio=1;
 
     }
+    else
+    {
 
-    */
+        }
 
-      if (x<-32) x=-32;
-      if (x>Anchura-32) x=Anchura-32;
-      if (y<-32) y=-32;
-      if (y>Altura-32) y=Altura-32;
+      if (x<=-32) x=0;
+      if (x>Anchura-64) x=Anchura-64;
+      if (y<=-32) y=0;
+      if (y>Altura-64) y=Altura-64;
+
 
 }
 
@@ -68,13 +68,14 @@ void NPC::setposition(int nx,int ny){
     nx=x; ny=y;
 }
 
-void NPC::detectarvida(){
-    if (hp==0){
-        vive=false;
-        blit(/*aca pon la imagen*/)
-        ~NPC();
-    }
+int NPC::random(){
+    //srand(time(NULL));
+    direccion=  rand()%5;
+    return direccion;
 }
 
 
+NPC:: ~NPC(){
+    destroy_bitmap(imagen);
+}
 

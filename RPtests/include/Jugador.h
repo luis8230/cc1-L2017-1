@@ -9,8 +9,8 @@ class Jugador:Entidad
     BITMAP *ProtagonistaA;
     BITMAP *ProtagonistaD;
     BITMAP *ProtagonistaI;
-    BITMAP *AtaqueI;
-    BITMAP *AtaqueD;
+    BITMAP *AtaqueI1; BITMAP *AtaqueI2;
+    BITMAP *AtaqueD1; BITMAP *AtaqueD2;
 
     int direccion;
     int animacion;
@@ -32,7 +32,6 @@ class Jugador:Entidad
         void keyboard();
         void choques();
         void posiciona(int nx,int ny);
-        void vida();
         bool atacando();
         bool NoAtaca();
 

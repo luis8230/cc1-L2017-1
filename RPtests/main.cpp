@@ -2,11 +2,9 @@
 #include "allegro.h"
 #include "escenario.h"
 #include "musica.h"
-#include "Entidad.h"       #include "Jugador.h"
-#include "colision.h"
-#include "Esencial.h"
-#include "NPC.h"
-#include <time.h>
+#include "Entidad.h"
+#include "Jugador.h"
+#include "Contrincante.h"
 using namespace std;
 
 const int Anchura = 640;
@@ -30,6 +28,15 @@ void inicio()
  srand(time(NULL));
 }
 
+int inicia_audio(int izquierda, int derecha){
+    if (install_sound(DIGI_AUTODETECT, MIDI_AUTODETECT, NULL) != 0) {
+       allegro_message("Error: inicializando sistema de sonido\n%s\n", allegro_error);
+       return 1;
+    }
+
+	set_volume(izquierda, derecha);
+}
+
 void pintar()
 {
     blit(buffer, screen, 0, 0, 0, 0, Anchura, Altura);
@@ -42,19 +49,29 @@ int main()
 
 
    inicio();
+   int cambio=0;
+   BITMAP *menu;
+    inicia_audio(70,70);
 
-    BITMAP *menu;
-    BTIMAP *gameover;
-    gameover=load_bmp("gamover.bmp";NULL)
-    menu=load_bmp("menu.bmp",NULL);
+    MIDI *fondo=load_midi("musica.mid");
+
+    play_midi(fondo,1);
 /*
+   switch (cambio)
+   {
+   case 1:
+       menu=load_bmp("menu.bmp",NULL);
+
        while(!key[KEY_ENTER])
        {
            clear_to_color(buffer,0xFFFFFF);
            blit(menu,buffer,0,0,0,0,640,400);
 
        }
- */
+       ++cambio;
+       break;
+
+   case 2:
         Jugador a;
         Esencial d;
         NPC enemigo1("Aqua1.bmp");
@@ -74,30 +91,36 @@ int main()
             enemigo2.pintar();
             enemigo2.movimiento();
 
-        if(a.x==enemigo1.x||a.y==enemigo1.y){
-            if (a.ataca==true){
-                enemigo1.hp--;
-            }
-            else:
-                a.hp--;
-        }
-         if(a.x==enemigo2.x||a.y==enemigo2.y){
-            if (a.ataca==true){
-                enemigo2.hp--;
-            }
-            else:
-                a.hp--;
-        }
             rest(1);
-        }
-        if (a.hp==0){
-            ~a();
-            ~enemigo1();
-            ~enemigo2();
-            ~arena();
-            blit(gameover,buffer,0,0,0,0,640,400);
+
         }
 
+
+   }
+
+*/
+
+
+            Jugador a;
+            Contrincante b;
+
+            a.posiciona(320,200);
+            b.posiciona(200,200);
+
+    while(!key[KEY_ESC]) {
+             clear_to_color(buffer,0xFFFFFF);
+
+            escenario arena("arena.bmp",buffer);
+            b.keyboard();
+            a.keyboard();
+            pintar();
+            a.pintar();
+            b.pintar();
+
+
+            rest(1);
+
+   }
     readkey();
     destroy_bitmap(buffer);
 

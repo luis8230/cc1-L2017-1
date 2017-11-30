@@ -2,6 +2,7 @@
 #define NPC_H
 #include <allegro.h>
 #include "Entidad.h"
+#include <time.h>
 class NPC: Entidad
 {
 
@@ -15,7 +16,7 @@ class NPC: Entidad
         int cx,cy;
         int animacion;
         int estado;
-        int direccion; //1=arriba, 2= abajo 3= izquierda 4= derecha
+        int direccion; //0=arriba, 1= abajo 2= izquierda 3= derecha
         int escena;
         int hp=5;
         int maxhp=5;
@@ -31,12 +32,13 @@ class NPC: Entidad
         bool agresivo= true;
 
         NPC(char const *e);
+         ~NPC();
         void pintar();
         void movimiento();
         int getx();
         int gety();
+        int random();
         void setposition(int nx,int ny);
-        void detectarvida();
 
 
 };

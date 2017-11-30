@@ -19,8 +19,3 @@ void escenario::pintar()
 {
     blit(esc,buffer,0,0,0,0,640,400);
 }
-
-~escenario::escenario()
-{
-    destroy_bitmap(esc);
-}
