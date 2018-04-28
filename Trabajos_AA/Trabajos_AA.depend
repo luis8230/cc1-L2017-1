@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1524870206 source:d:\trabajos_aa\main.cpp
+	<iostream>
+	<Codigos.h>
+
+1524922054 source:d:\trabajos_aa\src\codigos.cpp
+	"Codigos.h"
+
+1524870143 d:\trabajos_aa\include\codigos.h
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
